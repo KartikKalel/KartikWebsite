@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Suchi Resin Art</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Custom Styles for Blue & Pink Theme -->
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Header with Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">Suchi Resin Art</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="services.html">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="gallery.html">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Fullwidth Slideshow with Dots and Progress Bar -->
+    <div
+      id="carouselExampleIndicators"
+      class="carousel slide"
+      data-bs-ride="carousel"
+      data-bs-interval="5000"
+    >
+      <!-- Dots navigation -->
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+
+      <!-- Slideshow Items -->
+      <div class="carousel-inner">
+        <!-- First Slide -->
+        <div
+          class="carousel-item active"
+          style="background-image: url('images/prd1.jpg')"
+        >
+          <div
+            class="container-fluid d-flex h-100 align-items-center justify-content-center"
+          ></div>
+          <h1 class="text-white"></h1>
+          <div class="progress-container">
+            <div class="progress-bar" id="progressBar1"></div>
+          </div>
+        </div>
+
+        <!-- Second Slide -->
+        <div
+          class="carousel-item"
+          style="background-image: url('images/prd2.jpg')"
+        >
+          <div
+            class="container-fluid d-flex h-100 align-items-center justify-content-center"
+          >
+            <h1 class="text-white"></h1>
+          </div>
+          <div class="progress-container">
+            <div class="progress-bar" id="progressBar2"></div>
+          </div>
+        </div>
+
+        <!-- Third Slide -->
+        <div
+          class="carousel-item"
+          style="background-image: url('images/prd3.jpg')"
+        >
+          <div
+            class="container-fluid d-flex h-100 align-items-center justify-content-center"
+          >
+            <h1 class="text-white"></h1>
+          </div>
+          <div class="progress-container">
+            <div class="progress-bar" id="progressBar3"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Next and Previous Controls -->
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!-- About Us Section -->
+    <section id="about-us" class="py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 d-flex align-items-center">
+            <img
+              src="images/about.jpg"
+              alt="About Us"
+              class="img-fluid rounded"
+            />
+          </div>
+          <div class="col-md-6">
+            <h2 class="text-primary">About Us</h2>
+            <p class="text-muted">
+              We are a passionate team of professionals dedicated to delivering
+              exceptional services and products to our valued customers. Our
+              mission is to provide innovative and quality solutions that meet
+              and exceed expectations. With years of experience in the industry,
+              we pride ourselves on our commitment to excellence, attention to
+              detail, and customer satisfaction.
+            </p>
+            <p class="text-muted">
+              From design to execution, we ensure that our offerings are
+              tailored to your needs, delivering results that make a lasting
+              impact. Our values are deeply rooted in creativity, collaboration,
+              and continuous improvement, ensuring that we are always at the
+              forefront of industry trends.
+            </p>
+            <a href="contact.html" class="btn btn-custom mt-3">Contact Us</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-5 bg-light">
+      <div class="container">
+        <div class="row text-center mb-4">
+          <div class="col">
+            <h2 class="text-primary">Our Services</h2>
+            <p class="text-muted">
+              Explore our exquisite handcrafted resin products and jewelry.
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <!-- Service 1: Resin Products -->
+          <div class="col-md-6">
+            <div class="card mb-4">
+              <img
+                src="images/handcrafted.jpg"
+                class="card-img-top"
+                alt="Handcrafted Resin Products"
+              />
+              <div class="card-body">
+                <h5 class="card-title text-primary">
+                  Handcrafted Resin Products
+                </h5>
+                <p class="card-text text-muted">
+                  We specialize in beautifully crafted resin pieces that are
+                  designed to bring an artistic and personal touch to your
+                  space. From coasters to trays, each piece is unique and
+                  handmade with love.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Service 2: Jewelry -->
+          <div class="col-md-6">
+            <div class="card mb-4">
+              <img
+                src="images/jewel.jpg"
+                class="card-img-top"
+                alt="Handmade Jewelry"
+              />
+              <div class="card-body">
+                <h5 class="card-title text-primary">Handmade Jewelry</h5>
+                <p class="card-text text-muted">
+                  Our collection of handmade jewelry includes stunning resin
+                  pendants, earrings, and bracelets. Each piece is a work of
+                  art, designed to complement any style with elegance and charm.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonial Carousel Section -->
+    <section id="testimonials" class="py-5">
+      <div class="container">
+        <div class="row text-center mb-4">
+          <div class="col">
+            <h2 class="text-primary">What Our Customers Say</h2>
+            <p class="text-muted">
+              Hear from our satisfied customers about our handcrafted resin
+              products and jewelry.
+            </p>
+          </div>
+        </div>
+        <div
+          id="testimonialCarousel"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <!-- Testimonial 1 -->
+            <div class="carousel-item active">
+              <div class="row">
+                <div class="col-md-8 mx-auto">
+                  <div class="testimonial p-4 bg-light rounded">
+                    <p class="text-muted">
+                      "I absolutely love my resin jewelry! It’s so unique and
+                      beautifully crafted. The attention to detail is
+                      incredible, and I've received so many compliments!"
+                    </p>
+                    <h5 class="text-primary">- Sheetal B</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Testimonial 2 -->
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-md-8 mx-auto">
+                  <div class="testimonial p-4 bg-light rounded">
+                    <p class="text-muted">
+                      "The resin products I purchased are stunning. They make
+                      the perfect addition to my home décor, and you can tell
+                      they were made with care and creativity."
+                    </p>
+                    <h5 class="text-primary">- Anita K</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Testimonial 3 -->
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-md-8 mx-auto">
+                  <div class="testimonial p-4 bg-light rounded">
+                    <p class="text-muted">
+                      "Suchita’s handcrafted jewelry is amazing! Each piece is
+                      unique and made with such love and artistry. I can’t
+                      recommend their products enough!"
+                    </p>
+                    <h5 class="text-primary">- Parol N</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Carousel Controls -->
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#testimonialCarousel"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#testimonialCarousel"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Product Card Carousel Section -->
+    <section id="product-carousel" class="py-5 bg-light">
+      <div class="container">
+        <div class="row text-center mb-4">
+          <div class="col">
+            <h2 class="text-primary">Our Products</h2>
+            <p class="text-muted">
+              Explore our exclusive collection of handcrafted resin products and
+              jewelry.
+            </p>
+          </div>
+        </div>
+        <div
+          id="productCardCarousel"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <!-- Product Row 1 -->
+            <div class="carousel-item active">
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="card">
+                    <img
+                      src="images/prd1.jpg"
+                      class="card-img-top"
+                      alt="Resin Tray"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title text-primary">
+                        Handcrafted Resin Tray
+                      </h5>
+                      <p class="card-text text-muted">
+                        A beautiful, one-of-a-kind resin tray perfect for home
+                        décor.
+                      </p>
+                      <a href="product.html" class="btn btn-custom"
+                        >View Details</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="card">
+                    <img
+                      src="images/prd2.jpg"
+                      class="card-img-top"
+                      alt="Resin Pendant"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title text-primary">
+                        Handcrafted Resin Pendant
+                      </h5>
+                      <p class="card-text text-muted">
+                        A unique resin pendant that adds elegance to your style.
+                      </p>
+                      <a href="product.html" class="btn btn-custom"
+                        >View Details</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="card">
+                    <img
+                      src="images/prd3.jpg"
+                      class="card-img-top"
+                      alt="Resin Earrings"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title text-primary">
+                        Handcrafted Resin Earrings
+                      </h5>
+                      <p class="card-text text-muted">
+                        Beautiful resin earrings that make a perfect gift.
+                      </p>
+                      <a href="product.html" class="btn btn-custom"
+                        >View Details</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Product Row 2 -->
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="card">
+                    <img
+                      src="images/prd4.jpg"
+                      class="card-img-top"
+                      alt="Resin Coasters"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title text-primary">
+                        Handcrafted Resin Coasters
+                      </h5>
+                      <p class="card-text text-muted">
+                        A set of colorful resin coasters to brighten up your
+                        table.
+                      </p>
+                      <a href="product.html" class="btn btn-custom"
+                        >View Details</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="card">
+                    <img
+                      src="images/prd5.jpg"
+                      class="card-img-top"
+                      alt="Resin Bracelet"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title text-primary">
+                        Handcrafted Resin Bracelet
+                      </h5>
+                      <p class="card-text text-muted">
+                        A stylish resin bracelet that makes a bold statement.
+                      </p>
+                      <a href="product.html" class="btn btn-custom"
+                        >View Details</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="card">
+                    <img
+                      src="images/prd6.jpg"
+                      class="card-img-top"
+                      alt="Resin Keychain"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title text-primary">
+                        Handcrafted Resin Keychain
+                      </h5>
+                      <p class="card-text text-muted">
+                        A chic resin keychain to carry with style.
+                      </p>
+                      <a href="product.html" class="btn btn-custom"
+                        >View Details</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Carousel Controls -->
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#productCardCarousel"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#productCardCarousel"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center text-lg-start">
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+        &copy; 2024 Suchi Resin Art. All Rights Reserved.
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS with Popper.js for Slideshow and Gallery -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+    <script src="custom.js"></script>
+  </body>
+</html>

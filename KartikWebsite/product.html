@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Suchi Resin Art</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Custom Styles for Blue & Pink Theme -->
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Header with Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">Suchi Resin Art</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="services.html">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="gallery.html">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container my-5">
+      <div class="row">
+        <div class="col-md-6">
+          <img
+            src="images/prd1.jpg"
+            alt="Product Image"
+            class="product-image img-fluid"
+          />
+        </div>
+        <div class="col-md-6">
+          <h1 class="product-title">Handcrafted Resin Jhumka</h1>
+          <p class="product-price">₹ 399/-</p>
+          <p class="text-muted">
+            This beautiful handcrafted resin necklace is perfect for any
+            occasion. Made with love and attention to detail, it's a unique
+            addition to your jewelry collection.
+          </p>
+          <button class="btn add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+
+      <hr class="my-4" />
+
+      <!-- Tabs for Product Details and Customer Reviews -->
+      <ul class="nav nav-tabs" id="productTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <a
+            class="nav-link active"
+            id="details-tab"
+            data-bs-toggle="tab"
+            href="#details"
+            role="tab"
+            aria-controls="details"
+            aria-selected="true"
+            >Product Details</a
+          >
+        </li>
+        <li class="nav-item" role="presentation">
+          <a
+            class="nav-link"
+            id="reviews-tab"
+            data-bs-toggle="tab"
+            href="#reviews"
+            role="tab"
+            aria-controls="reviews"
+            aria-selected="false"
+            >Customer Reviews</a
+          >
+        </li>
+      </ul>
+
+      <div class="tab-content" id="productTabContent">
+        <div
+          class="tab-pane fade show active"
+          id="details"
+          role="tabpanel"
+          aria-labelledby="details-tab"
+        >
+          <h2>Details</h2>
+          <ul>
+            <li>Material: High-quality resin</li>
+            <li>Dimensions: 2" x 3"</li>
+            <li>Weight: 0.5 oz</li>
+            <li>Care Instructions: Wipe clean with a damp cloth</li>
+          </ul>
+        </div>
+        <div
+          class="tab-pane fade"
+          id="reviews"
+          role="tabpanel"
+          aria-labelledby="reviews-tab"
+        >
+          <h2>Customer Reviews</h2>
+          <div class="mb-3">
+            <h5>John Doe</h5>
+            <p>
+              ⭐⭐⭐⭐⭐ - I absolutely love this necklace! It's stunning and
+              well-made.
+            </p>
+          </div>
+          <div class="mb-3">
+            <h5>Jane Smith</h5>
+            <p>⭐⭐⭐⭐ - Great product, but I wish it came in more colors.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center text-lg-start">
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+        &copy; 2024 Suchi Resin Art. All Rights Reserved.
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS with Popper.js for Slideshow and Gallery -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+    <script src="custom.js"></script>
+  </body>
+</html>
